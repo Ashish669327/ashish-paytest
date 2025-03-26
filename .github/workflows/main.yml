@@ -29,4 +29,4 @@ jobs:
           pip install requests
       - name: test
         run: |
-          pytest test_add_app.py
+          pytest Demo.py
