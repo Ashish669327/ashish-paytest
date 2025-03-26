@@ -1,22 +1,9 @@
 import pytest
-import json
-import requests
-from config import KEYS
 
-import os
-
-
-@pytest.mark.usefixtures("test_setup")
 class TestAddApp:
 
     def add(self, a, b):
-        result = a + b
-        print(f"The sum of {a} and {b} is: {result}")
+        return a + b
 
-    # Create an instance of the class
-
-
-calc = TestAddApp()
-
-# Call the add function
-calc.add(5, 3)
+    def test_addition(self):  # Function name must start with 'test_'
+        assert self.add(5, 3) == 8  # Simple test case
