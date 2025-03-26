@@ -36,4 +36,5 @@ jobs:
 
     - name: test
       run: |
-        pytest Demo.py
+        pytest test_add_app.py
+        
